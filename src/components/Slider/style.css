@@ -1,0 +1,39 @@
+.swiper {
+  overflow: visible;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 100%;
+  width: 80px;
+  background: #F4F5F9;
+  top: 20px;
+}
+
+.swiper-button-prev {
+  left: -80px;
+}
+
+.swiper-button-next {
+  right: -80px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 15px rgba(56, 119, 238, 0.1);
+  top: 41px;
+}
