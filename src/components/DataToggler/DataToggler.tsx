@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import Context from "../context/Context.tsx";
-import styled from "styled-components";
+import Context from "../../context/Context.tsx";
+import {Container, Info, Controllers, Button} from './style.ts';
 
 const DataToggler = () => {
   const {
@@ -9,41 +9,6 @@ const DataToggler = () => {
     activeCategoryId,
     setActiveCategoryId,
   } = useContext(Context);
-
-  const Container = styled.div`
-    padding-left: 80px;
-    margin-bottom: 56px;
-    height: 88px;
-    width: 120px;
-  `;
-
-  const Info = styled.div`
-    font-family: PTSans-Regular, serif;
-    font-size: 14px;
-  `;
-
-  const Controllers = styled.div`
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  `;
-
-  const Button = styled.button`
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid rgba(66, 86, 122, 0.5);
-    font-size: 30px;
-    color: #42567a;
-    cursor: pointer;
-    transition: background-color 0.3s linear;
-
-    &:hover {
-      transition: background-color 0.3s linear;
-      background-color: #fff;
-    }
-  `;
 
   const handleClickPrev = () => {
     if (activeCategoryId <= allData.length && activeCategoryId > 1) {

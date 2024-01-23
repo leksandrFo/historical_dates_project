@@ -1,29 +1,10 @@
 import { useState, useContext, useEffect } from 'react';
-import Context from '../context/Context.tsx';
-import styled from 'styled-components';
+import Context from '../../context/Context.tsx';
 import CountUp from 'react-countup';
+import {IntervalContainer, Year} from './style.ts';
 
 export default function Interval() {
   const {currentData, interval} = useContext(Context);
-  
-  const IntervalContainer = styled.div`
-    margin: 0 auto;
-    padding-top: 400px;
-    padding-bottom: 137px;
-    height: 160px;
-    width: 973px;
-    top: 400px;
-    left: 217px;
-    display: flex;
-    justify-content: space-between;
-  `;
-
-  const Year = styled.div`
-  font-family: PTSans-Bold, sans-serif;
-  font-size: 200px;
-  line-height: 160px;
-  color: ${({ color }) => color};
-`;
 
   const [year, setYear] = useState<number[]>(interval);
 
