@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext} from "react";
 import { IData } from "../../data/interface/IData";
 import Context from "../../context/Context";
 import {CircleContainer, CircleLine, Dot, DotInner} from './style.ts';

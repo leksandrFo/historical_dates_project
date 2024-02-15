@@ -15,11 +15,11 @@
 }
 
 .swiper-button-prev {
-  left: -80px;
+  left: -82px;
 }
 
 .swiper-button-next {
-  right: -80px;
+  right: -82px;
 }
 
 .swiper-button-prev::after,
@@ -36,4 +36,13 @@
   background: white;
   box-shadow: 0 0 15px rgba(56, 119, 238, 0.1);
   top: 41px;
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-slide {
+    opacity: 0.4;
+  }
+  .swiper-slide-active {
+    opacity: 1;
+  }
 }

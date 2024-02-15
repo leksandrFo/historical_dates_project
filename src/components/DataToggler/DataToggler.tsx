@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Context from "../../context/Context.tsx";
-import {Container, Info, Controllers, Button} from './style.ts';
+import {Container, Info, Controllers, Button, CategoryName} from './style.ts';
 
 const DataToggler = () => {
   const {
@@ -12,14 +12,14 @@ const DataToggler = () => {
 
   const handleClickPrev = () => {
     if (activeCategoryId <= allData.length && activeCategoryId > 1) {
-      setActiveCategoryId((prevState) => prevState - 1);
+      setActiveCategoryId((prevState: number) => prevState - 1);
     } else if (activeCategoryId === 1) {
       setActiveCategoryId(allData.length);
     }
   };
   const handleClickNext = () => {
     if (activeCategoryId < allData.length) {
-      setActiveCategoryId((prevState) => prevState + 1);
+      setActiveCategoryId((prevState: number) => prevState + 1);
     } else if (activeCategoryId === allData.length) {
       setActiveCategoryId(1);
     }

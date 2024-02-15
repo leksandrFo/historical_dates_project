@@ -10,7 +10,6 @@ export const CircleContainer = styled.div`
   margin: 0 auto;
   width: ${RADIUS}px;
   height: ${RADIUS}px;
-  margin: 0 auto;
 `;
 export const CircleLine = styled.div`
   width: 100%;
